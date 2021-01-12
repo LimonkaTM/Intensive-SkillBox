@@ -3,7 +3,7 @@
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 
-	$dbh = new PDO('mysql:host=localhost;dbname=ck15124_21321313', 'ck15124_21321313', 'tLiqT9Eu');
+	$dbh = new PDO('mysql:host=localhost;dbname=nameDB', 'nameDB', 'password');
 	$stmt = $dbh->prepare("INSERT INTO `order`(`time`, name, email)
 		VALUES (NOW(), :name, :email)");
 	$stmt->bindParam(':name', $name);
