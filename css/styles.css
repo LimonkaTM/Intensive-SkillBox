@@ -1,0 +1,279 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 26px;
+	margin-top: 0;
+}
+
+.fixed-container {
+	width: 1000px;
+	padding: 0 100px;
+	margin: 0 auto;
+}
+header {
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav a {
+	font-size: 20px;
+	margin-right: 50px;
+	color: black;
+	text-decoration: none;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+
+.footer	{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 50px 0;
+}
+
+/*.conteiner-footer{
+	margin-bottom: 0;
+}*/
+
+.phone {
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 20px;
+}
+.order-call {
+	padding: 15px 50px;
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: transparent;  /*прозрачный задний фон кнопки*/
+	cursor: pointer;
+}
+.main-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	height: 500px;
+}
+.photo-container {
+	width: 500px;
+	background-image: url(../img/man.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 480px;
+}
+
+.text-main-block	{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+}
+
+.title	{	
+	margin-top: 150px;
+	margin-bottom: 15px;
+	font-size: 50px;
+}
+
+.text 	{
+	margin-bottom: 35px;
+	font-size: 16px;
+}
+
+.button-main-block {
+	width: 200px;
+	background-color: #3F2AFF;
+	color: #fff;
+	border: 0px;
+}
+
+.service-icons, .portfolio-icon	{
+	margin: 70px 0;	
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.service-item	{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	font-size: 14px;
+	width: 350px;
+	padding-left: 50px;
+	padding-right: 50px; 
+}
+
+.first-item	{
+	padding-left: 0;
+}
+
+.last-item	{
+	padding-right: 0;
+}
+
+.service-item img 	{
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+.portfolio-img {
+	font-size: 14px;
+	padding-left: 20px;
+	padding-right: 20px; 
+}
+
+.portfolio-img img {
+	height: 207px;
+	margin-bottom: 20px;
+}
+
+.first-img	{
+	padding-left: 0;
+}
+
+.last-img	{
+	padding-right: 0;
+}
+
+.main-block, .header-block {
+	margin-bottom: 0;
+}
+
+.blue-block	{
+	background-color: #3F2AFF;
+	color: white;
+	height: 500px;
+}
+
+.blue-container	{
+	padding: 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.title-blue-container	{
+	margin-top: 0;
+	margin-bottom: 100px;
+}
+
+.footer-menu 	{
+	display: flex;
+	flex-direction: column; /*рассположение объектов в контейнере - в колонку*/
+	justify-content: flex-start; /*выравнивание по горизонтали*/
+	align-items: flex-start; /*выравнивание по вертикали*/
+}
+
+.footer-menu a 	{
+	margin-bottom: 25px;
+}
+
+.contacts	{
+	display: flex;
+	flex-direction: column;	
+}
+
+.contacts-mail, .contacts-number	{
+	margin-bottom: 25px;
+	font-size: 20px;
+}
+
+.social-container .order-call	{
+	margin-left: 26px;
+}
+
+.social-links	{
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.social-links a 	{
+	margin-left: 20px;
+}
+
+.social-links a img	{
+	height: 24px;
+}
+
+.margin-botom 	{
+	margin-bottom: 200px;
+}
+
+#margin-top	{
+	margin-top: 100px;
+}
+
+.popup-container	{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: #2b2b2b8c;	
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup	{
+	background-color: white;
+	border-radius: 10px;
+	width: 350px;
+	padding: 30px;
+	position: relative;
+}
+
+.close	{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/x-mark.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.popup-form		{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.popup h3 {
+	font-size: 36px;
+	margin-top: 0
+	margin-bottom: 30px;
+}
+
+.popup-form label	{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+input	{
+	border-radius: 5px;
+}
+
+.popup-form input[text="text"]	{
+	display: block;
+	margin: 10px 0;
+	font-size: 20px;
+}
